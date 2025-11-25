@@ -1,0 +1,1 @@
+# External API clients live here (HTTP, databases, etc.).

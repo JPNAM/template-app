@@ -11,5 +11,8 @@ class Settings:
     APP_VERSION: str = os.getenv("APP_VERSION", "0.1.0")
     DEBUG: bool = os.getenv("DEBUG", "true").lower() == "true"
 
+    EXTERNAL_API_BASE_URL: str | None = os.getenv("EXTERNAL_API_BASE_URL")
+    EXTERNAL_API_KEY: str | None = os.getenv("EXTERNAL_API_KEY")
+
 
 settings = Settings()

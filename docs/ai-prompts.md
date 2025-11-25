@@ -31,3 +31,24 @@ Please:
 3. Create a simple User ORM model.
 4. Show how to configure the database URL from an environment variable in app/config.py.
 5. Update app/services/users_service.py to read/write users from the database instead of the in-memory list.
+
+## Build a live data pipeline
+
+You are working in this template-app:
+
+- External API clients live in app/integrations/.
+- Pipelines live in app/pipelines/.
+- Environment variables are read from app/config.py.
+
+Please:
+
+1. # Implement a client for the <NAME> API in app/integrations <name>_client.py.
+   - # Use httpx.AsyncClient.
+   - # Read base URL and API key from new env vars (document them).
+2. # Implement a pipeline function in app/pipelines/<name>_pipeline.py
+   - # It should fetch data, transform it into a list of Pydantic models, and return them.
+3. # Expose an endpoint in app/api/<name>.py that triggers the pipeline and returns the latest data.
+4. # Register the router in app/main.py under /api.
+
+Return full file contents for any files you create or change.
+
