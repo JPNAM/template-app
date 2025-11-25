@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
 from .core.logging import configure_logging
-from .api import health, example  # plus any other routers you add
+from .api import health, example, pipelines # plus any other routers you add
 
 
 configure_logging()
