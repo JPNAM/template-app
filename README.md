@@ -43,7 +43,10 @@ For this template or any project created from it:
 
    * API root: [http://localhost:8000/](http://localhost:8000/)
    * API docs (Swagger UI): [http://localhost:8000/docs](http://localhost:8000/docs)
+  
+  NB: Update docker-compose.yml to use container_name: {app_name}. Replace {app_name} with the name of the app - it is a placeholder.
 
+  
 You should see:
 
 * `GET /api/health` returning `{"status": "ok"}`
